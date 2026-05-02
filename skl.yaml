@@ -22,3 +22,7 @@ skills:
   - id: n-plus-one
     path: skills/n-plus-one
     summary: find and fix N+1 query patterns in ORM code, with verified before/after query counts
+
+  - id: pg-explain
+    path: skills/pg-explain
+    summary: read EXPLAIN ANALYZE output, identify the actual cost driver, propose the minimum change that fixes it
