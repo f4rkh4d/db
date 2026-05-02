@@ -1,0 +1,24 @@
+name: farkhad-db
+version: 0.1.0
+description: Postgres skills — migrations, RLS policies, schema review, N+1 hunting. Practical, opinionated.
+author: f4rkh4d
+homepage: https://github.com/f4rkh4d/db
+targets:
+  - claude-code
+
+skills:
+  - id: migration-writer
+    path: skills/migration-writer
+    summary: write up/down migrations that survive zero-downtime deploys, refuses destructive without confirmation
+
+  - id: rls-policy
+    path: skills/rls-policy
+    summary: Postgres RLS done right — fail-closed defaults, set_config bind params, isolation test included
+
+  - id: schema-review
+    path: skills/schema-review
+    summary: prioritized list of real schema issues (missing FK indexes, nullable-shouldn't, unbounded types) — no abstract advice
+
+  - id: n-plus-one
+    path: skills/n-plus-one
+    summary: find and fix N+1 query patterns in ORM code, with verified before/after query counts
